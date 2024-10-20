@@ -1,0 +1,79 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+#main{
+    display:flex;
+    flex-direction: row;
+    position:relative;
+    align-items: center;
+    justify-items: center;
+    padding: 150px;
+    animation: rotate 2s linear;
+    
+    
+}
+@keyframes rotate{
+    20%{
+        transform: rotatey(30deg);
+    }
+    /* 45%{
+        transform: rotateY(45deg);
+    } */
+
+}
+    
+#img1{
+    height: 300px;
+    width: 300px;
+    border: 2px white solid;
+    margin-left: -15px;
+    z-index: -2;
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateY(35deg);
+    
+}
+#img2{
+    height: 300px;
+    width: 300px;
+    border: 2px white solid;
+    margin-left: -45px;
+    margin-right: -50px;
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateY(35deg);
+    z-index: -1;
+}
+#img3{
+    height: 300px;
+    width: 400px;
+    border: 2px white solid;
+    z-index: 1;
+    transform-style: preserve-3d;
+    
+}
+#img4{
+    height: 300px;
+    width: 300px;
+    border: 2px white solid;
+    margin-right: -45px;
+    margin-left: -45px;
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateY(-35deg);
+    z-index: 2;
+}
+#img5{
+    height: 300px;
+    width: 300px;
+    border: 2px white solid;
+    margin-right: -55px;
+    z-index: 3;
+    transform-style: preserve-3d;
+    transform: perspective(500px) rotateY(-35deg);
+   
+}
+
+
